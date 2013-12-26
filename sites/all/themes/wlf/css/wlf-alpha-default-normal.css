@@ -1,3 +1,84 @@
 /* This file will hold styles that are loaded using the same media query as the normal grid. */
 /* If you are using the default media queries provided by Omega, these styles will also
  *  apply to the widescreen layout unless they are overridden by the widescreen styles. */
+
+/*** Home Page ***/
+body.front h1.title,
+body.front ul.tabs {
+	display: none;
+}
+
+/* Fitness Tips & Nutrition Tips */
+body.front #region-content > div > .block + .block {
+	width: 300px;
+	float: left;
+}
+body.front #region-content > div > section.block.even {
+	margin-right: 20px;
+}
+
+/* Free eBook */
+body.front #region-sidebar-first > div > .block {
+	height: 349px;
+	margin-bottom: 1em;
+}
+
+/* Helpful Links */
+body.front #region-sidebar-first > div > .block + .block {
+	height: 250px;
+}
+
+/* Fitness Tips, Nutrition Tips & Helpful Links */
+body.front #region-content > div > .block + .block h2,
+body.front #region-sidebar-first > div > .block + .block h2 {
+	background-color: #ccc;
+	padding: .5em;
+} 
+
+/* Slideshow - 620px by 349px */
+body.front #region-content #block-views-nodequeue-1-block-1 {
+	display: block;
+	height: 349px;
+	margin-bottom: 1em;
+}
+body.front .region-content #block-views-nodequeue-1-block-1 .views-field-body {
+	position: relative;
+	top: -5em;
+	left: 1em;
+	font-family: 'Syncopate';
+	color: white;
+	text-shadow: 1px 1px #000000;
+	font-size: 2em;
+}
+
+/*** Header ***/
+#zone-header {
+	margin-bottom: .5em;
+}
+#zone-header-wrapper {
+	background-color: #fff;
+}
+
+#region-branding .logo-img {
+
+}
+
+#region-branding .site-name {
+	width: 200px;
+}
+
+/*** Top Menu ***/
+#zone-menu {
+	margin-bottom: .5em;
+}
+#zone-menu-wrapper #superfish-1 > li > a {
+	display: block;
+	padding: .7em 2.5em;
+	text-decoration: none;
+	font-size: 1.2em;
+	font-weight: 600;
+	border-radius: .5em;
+} #zone-menu-wrapper #superfish-1 > li > a:hover {
+	background-color: #ccc;
+}
+

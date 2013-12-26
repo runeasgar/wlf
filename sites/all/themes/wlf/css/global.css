@@ -1,7 +1,7 @@
 /* This file will hold styles for the mobile version of your website (mobile first). */
 /* This also can include ANY global CSS that applies site-wide. Unless overwritten by a more specific style rule, CSS declarations in global.css will apply site-wide. */
 
-/* General */
+/*** General ***/
 body {
 	font-family: Arial;
 }
@@ -11,108 +11,89 @@ h1.title {
 	font-weight: 700;
 }
 
-.site-name {
-	font-family: 'Syncopate';
-	text-transform: uppercase;
-}
-
 h2 {
 	font-family: 'Tenor Sans';
 	text-transform: uppercase;
+	background-color: #ccc;
+	padding: .5em;
+	border-radius: .5em;
 }
 
-/*** Home Page ***/
+/* Form Elements */
+input, textarea {
+	max-width: 100%;
+}
 
-body.front h1.title,
-body.front ul.tabs {
+/*** Branding ***/
+#zone-header-wrapper {
+	margin-bottom: 1em;
+}
+#logo {
+	width: 100px;
+}
+.site-name {
+	font-family: 'Syncopate';
+	text-transform: uppercase;
+	font-size: 2.4em !important; /* Because otherwise omega-text.css overrides? Lame! */
+	width: 175px;
+	background-color: transparent;
+	padding: 0em;
+}
+
+/* HIDE Top Menu, Breadcrumb, Free eBook, Newsletter Signup, Schedule Appointment */
+#section-header #zone-menu-wrapper,
+#breadcrumb,
+#region-sidebar-first > div > .block,
+#zone-footer .region-footer-second,
+#zone-footer .region-footer-third {
 	display: none;
 }
 
-/* Slideshow - 620px by 349px */
-body.front #region-content #block-views-nodequeue-1-block-1 {
-	height: 349px;
-	margin-bottom: 1em;
-}
-body.front .region-content #block-views-nodequeue-1-block-1 .views-field-body {
-	position: relative;
-	top: -5em;
-	left: 1em;
-	font-family: 'Syncopate';
-	color: white;
-	text-shadow: 1px 1px #000000;
-	font-size: 2em;
+/*** Free Consultation Callout ***/
+#region-header-callout {
+	margin-top: .5em;
 }
 
-/* Fitness Tips & Nutrition Tips */
-body.front #region-content > div > .block + .block {
-	width: 300px;
-	float: left;
-}
-body.front #region-content > div > section.block.even {
-	margin-right: 20px;
-}
-
-/* Free eBook */
-body.front #region-sidebar-first > div > .block {
-	height: 349px;
-	margin-bottom: 1em;
-}
-
-/* Helpful Links */
-body.front #region-sidebar-first > div > .block + .block {
-	height: 250px;
-}
-
-/* Fitness Tips, Nutrition Tips & Helpful Links */
-body.front #region-content > div > .block + .block h2,
-body.front #region-sidebar-first > div > .block + .block h2 {
-	background-color: #ccc;
-	padding: .5em;
-}
-
-/*** Header ***/
-#zone-header {
-	margin-bottom: .5em;
-}
-#zone-header-wrapper {
-	background-color: #fff;
-}
-
-#region-branding .logo-img {
-
-}
-
-#region-branding .site-name {
-	width: 200px;
-}
-
-/* Top Menu */
-#zone-menu {
-	margin-bottom: .5em;
-}
-#zone-menu-wrapper #superfish-1 > li > a {
+/*** Contact Information ***/
+#phone-number {
 	display: block;
-	padding: .7em 2.5em;
+	padding: .5em;
+	background-color: #36c;
+	font-size: 1.5em;
+	border-radius: 1em;
+	text-align: center;
+	color: white;
 	text-decoration: none;
-	font-size: 1.2em;
-	font-weight: 600;
+	font-weight: 700;
+}
+
+/*** Top Menu ***/
+#zone-menu-secondary {
+	margin-bottom: .5em;
+}
+#zone-menu-secondary-wrapper #superfish-2 > li {
+	width: 100%;
+	margin: 0em;
+}
+#zone-menu-secondary-wrapper #superfish-2 > li > a {
+	display: block;
+	float: none;
+	width: 100%;
+	padding: .5em 0em;
+	text-decoration: none;
+	font-size: 1.1em;
 	border-radius: .5em;
-} #zone-menu-wrapper #superfish-1 > li > a:hover {
 	background-color: #ccc;
+	margin-bottom: .3em;
+	text-indent: .5em;
 }
 
-/* Content */
-#zone-content-wrapper {
-	top-margin: 1em;
-	background-color: #cfc;
-}
-
-/* Bottom Menu */
-#zone-menu-secondary-wrapper {
-	background-color: #ccf;
-}
-
-/* Footer */
-#zone-footer-wrapper {
-	background-color: #ccc;
+/*** Home Page ***/
+/* HIDE Page Title, Tabs, Slideshow, Fitness Tips & Nutrition Tips, Free eBook, Helpful Links */
+body.front h1.title,
+body.front ul.tabs,
+body.front #region-content #block-views-nodequeue-1-block-1,
+body.front #region-content > div > .block + .block,
+body.front #region-sidebar-first > div > .block + .block {
+	display: none;
 }
