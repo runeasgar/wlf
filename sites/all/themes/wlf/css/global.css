@@ -3,40 +3,83 @@
 
 /*** General ***/
 body {
+	margin-top: .5em;
 	font-family: Arial;
+	font-size: 1em;
+}
+
+h1, h2, h3 {
+	text-align: center;
 }
 
 h1.title {
-	font-family: 'Tenor Sans';
-	font-weight: 700;
+	font-family: 'Inder';
+	font-size: 1.7em;
+	color: #333;
 }
 
-h2 {
-	font-family: 'Tenor Sans';
+h2,
+h2.block-title {
+	font-family: 'Josefin Sans';
+	background-color: #ddd;
+	padding: .3em 0em .1em 0em;
+	font-size: 1.4em;
+	border-radius: 6px;
+	margin-bottom: .5em !important;
+}
+
+h3 {
+	font-family: Arial;
+	font-size: 1em;
+	margin-bottom: 0em;
 	text-transform: uppercase;
-	background-color: #ccc;
-	padding: .5em;
-	border-radius: .5em;
+	text-decoration: underline;
+}
+
+a {
+	text-decoration: none !important;
 }
 
 /* Form Elements */
 input, textarea {
 	max-width: 100%;
+	font-size: 1.2em !important;
+}
+input[type="submit"],
+#phone-number {
+	padding: .5em !important;
+	font-size: 1.2em !important;
+	background: #36c !important;
+	color: white !important;
+	border-radius: 6px !important;
+	border: 0px;
+	text-shadow: none;
+	text-decoration: none;
+	font-weight: 700;
+}
+input[type="submit"] { /* Because otherwise the padding on the phone number pushes it out */
+	width: 100%;
 }
 
 /*** Branding ***/
 #zone-header-wrapper {
-	margin-bottom: 1em;
+	margin-bottom: .5em;
 }
 #logo {
 	width: 100px;
 }
 .site-name {
-	font-family: 'Syncopate';
-	text-transform: uppercase;
-	font-size: 2.4em !important; /* Because otherwise omega-text.css overrides? Lame! */
 	width: 175px;
 	background-color: transparent;
+	text-align: left;
+	font-size: 2.3em !important;
+	margin: 0em;
+	padding: 0em;
+}
+.site-name a {
+	color: #333 !important;
+	font-family: 'Inder';
+	text-transform: uppercase;
 	padding: 0em;
 }
 
@@ -53,18 +96,16 @@ input, textarea {
 #region-header-callout {
 	margin-top: .5em;
 }
+#region-header-callout #request-free-consultation-desktop {
+	display: none;
+}
 
 /*** Contact Information ***/
+#region-header-contact {
+	text-align: center;
+}
 #phone-number {
 	display: block;
-	padding: .5em;
-	background-color: #36c;
-	font-size: 1.5em;
-	border-radius: 1em;
-	text-align: center;
-	color: white;
-	text-decoration: none;
-	font-weight: 700;
 }
 
 /*** Top Menu ***/
@@ -80,10 +121,9 @@ input, textarea {
 	float: none;
 	width: 100%;
 	padding: .5em 0em;
-	text-decoration: none;
-	font-size: 1.1em;
-	border-radius: .5em;
-	background-color: #ccc;
+	border-radius: 6px;
+	background-color: #69f;
+	color: white;
 	margin-bottom: .3em;
 	text-indent: .5em;
 }
