@@ -3,3 +3,163 @@
  *  apply to the normal and widescreen layouts. You may override these styles in the normal 
  *  and widescreen CSS files as appropriate. */
  
+/*** General ***/
+
+h1, h2, h3 {
+	text-align: center;
+}
+
+h1.title {
+	text-align: left;
+}
+
+/*** Branding ***/
+#zone-header-wrapper {
+	margin-bottom: .5em;
+}
+#logo {
+	width: 100px;
+}
+.site-name {
+	width: 125px;
+	background-color: transparent;
+	text-align: left;
+	font-size: 2.3em !important;
+	margin: 0em;
+	padding: 0em;
+}
+.site-name a {
+	color: #333 !important;
+	font-family: 'Inder';
+	text-transform: uppercase;
+	padding: 0em;
+}
+
+/* DISPLAY Top Menu, Free eBook, Newsletter Signup */
+#section-header #zone-menu-wrapper,
+#region-sidebar-first > div > .block,
+#zone-footer .region-footer-second {
+	display: block;
+}
+/* HIDE Bottom Menu */
+#section-footer #zone-menu-secondary-wrapper {
+	display: none;
+}
+
+/*** Free Consultation Callout ***/
+#region-header-callout {
+	margin-top: .5em;
+	float: right;
+	width: 400px;
+}
+#region-header-callout #request-free-consultation-desktop {
+	display: inline;
+}
+#region-header-callout #request-free-consultation-mobile {
+	display: none;
+}
+
+/*** Contact Information ***/
+#region-header-contact {
+	width: 100%;
+	clear: both;
+}
+#region-header-contact #location,
+#region-header-contact #hours {
+	width: 33%;
+	float: left;
+	position: relative;
+	top: -15px;
+}
+#phone-number {
+	display: block;
+	width: 31%;
+	float: left;
+}
+
+/*** Top Menu ***/
+#zone-menu-wrapper {
+	margin-bottom: .5em;
+	background-color: #69f;
+}
+#zone-menu-wrapper #superfish-1 > li {
+	margin: 0em;
+}
+#zone-menu-wrapper #superfish-1 > li > a {
+	display: block;
+	width: 100%;
+	padding: 1em 0em 1em 0em;
+	margin-right: 2.5em;
+	background-color: #69f;
+	color: white;
+	text-indent: .5em;
+} #zone-menu-wrapper #superfish-1 > li > a:hover {
+	background-color: #36c;
+}
+#zone-menu-wrapper #superfish-1 > li > ul {
+	background-color: #69f;
+	top: 48px;
+}
+#zone-menu-wrapper #superfish-1 > li > ul > li {
+	margin: 0em;
+	text-indent: .5em;
+}
+#zone-menu-wrapper #superfish-1 > li > ul > li > a {
+	color: white;
+	padding: .3em 0em;
+} #zone-menu-wrapper #superfish-1 > li > ul > li > a:hover {
+	background-color: #36c;
+}
+
+/*** Home Page ***/
+/* DISPLAY Slideshow, Fitness Tips & Nutrition Tips, Helpful Links */
+body.front #region-content #block-views-nodequeue-1-block-1,
+body.front #region-content > div > .block + .block,
+body.front #region-sidebar-first > div > .block + .block {
+	display: block;
+}
+
+/* Slideshow - 460px by 259px */
+body.front #region-content #block-views-nodequeue-1-block-1,
+body.front #region-content #block-views-nodequeue-1-block-1 img {
+	display: block;
+	width: 460px;
+	height: 259px;
+	margin-bottom: 1em;
+}
+body.front .region-content #block-views-nodequeue-1-block-1 .views-field-body {
+	position: relative;
+	top: -5em;
+	left: 1em;
+	font-family: 'Architects Daughter'; /* Find a hand-written font */
+	color: white;
+	text-shadow: 1px 1px #000000;
+	font-size: 2em;
+	width: 400px;
+}
+
+/* Fitness Tips & Health Tips */
+body.front #region-content > div > .block + .block {
+	width: 47%;
+	float: left;
+}
+
+body.front #region-content > div > section.block.even {
+	margin-right: 25px;
+}
+
+/* Free eBook */
+body.front #region-sidebar-first > div > .block:first-child {
+	height: 259px;
+	margin-bottom: 1em;
+}
+
+/*** Footer ***/
+#zone-footer-wrapper h2 {
+	font-size: 1.1em;
+}
+
+#zone-footer .region-footer-first,
+#zone-footer .region-footer-second {
+	width: 47%;
+}

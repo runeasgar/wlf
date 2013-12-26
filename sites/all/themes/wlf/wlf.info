@@ -9,6 +9,7 @@ fonts[google_fonts_api][] = "Syncopate&subset=latin#700"
 fonts[google_fonts_api][] = "Syncopate&subset=latin#regular"
 fonts[google_fonts_api][] = "Tenor Sans&subset=latin#regular"
 fonts[google_fonts_api][] = "Josefin Sans&subset=latin#300"
+fonts[google_fonts_api][] = "Architects Daughter&subset=latin#regular"
 regions[header_callout] = 'Header Callout'
 regions[header_contact] = 'Header Contact'
 regions[footer_third] = 'Footer Third'

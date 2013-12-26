@@ -21,11 +21,16 @@ h1.title {
 h2,
 h2.block-title {
 	font-family: 'Josefin Sans';
-	background-color: #ddd;
+	background-color: #ffa500;
 	padding: .3em 0em .1em 0em;
 	font-size: 1.4em;
 	border-radius: 6px;
 	margin-bottom: .5em !important;
+}
+
+#zone-footer h2,
+#zone-footer h2.block-title {
+	background-color: #ddd;
 }
 
 h3 {
@@ -96,6 +101,10 @@ input[type="submit"] { /* Because otherwise the padding on the phone number push
 #region-header-callout {
 	margin-top: .5em;
 }
+#region-header-callout h2 {
+	background-color: #ffa500;
+	color: white;
+}
 #region-header-callout #request-free-consultation-desktop {
 	display: none;
 }
@@ -136,4 +145,14 @@ body.front #region-content #block-views-nodequeue-1-block-1,
 body.front #region-content > div > .block + .block,
 body.front #region-sidebar-first > div > .block + .block {
 	display: none;
+}
+
+#zone-footer-wrapper {
+	padding-top: 1em;
+	background-color: #333;
+	color: white;
+}
+
+#zone-footer-wrapper h2 {
+	color: black;
 }
