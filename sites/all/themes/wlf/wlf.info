@@ -4,6 +4,8 @@ core = '7.x'
 engine = 'phptemplate'
 screenshot = 'screenshot.png'
 base theme = 'omega'
+fonts[google_fonts_api][] = "Syncopate&subset=latin#regular"
+fonts[google_fonts_api][] = "Tenor Sans&subset=latin#regular"
 regions[header_callout] = 'Header Callout'
 regions[header_contact] = 'Header Contact'
 regions[footer_third] = 'Footer Third'
