@@ -4,6 +4,10 @@
 
 /*** General ***/
 
+h1.title {
+	font-size: 2.2em;
+}
+
 /* DISPLAY Schedule Appt */
 #zone-footer .region-footer-third {
 	display: block;
@@ -40,7 +44,7 @@
 /*** Contact Information ***/
 #region-header-contact {
 	display: block;
-	width: 200px;
+	width: 250px;
 	float: left;
 	clear: none;
 	text-align: left;
@@ -64,6 +68,11 @@
 	margin-bottom: .5em;
 	padding: .4em .4em !important;
 	text-align: center;
+}
+
+/*** Top Menu ***/
+#zone-menu-wrapper #superfish-1 > li > a {
+	margin-right: 5.5em;
 }
 
 /*** Home Page ***/
@@ -91,12 +100,18 @@ body.front #region-sidebar-first > div > .block:first-child {
 
 /*** Footer ***/
 #zone-footer-wrapper h2 {
-	font-size: 1.1em;
+	font-size: 1.4em;
 }
 
 #zone-footer .region-footer-first,
 #zone-footer .region-footer-second,
 #zone-footer .region-footer-third {
-	width: 31%;
+	width: 286px;
 	float: left;
+	height: 550px;
+}
+
+#zone-footer .region:last-child {
+	padding-left: 1em;	
+	border-left: 1px dotted #666;
 }

@@ -78,9 +78,10 @@ h1.title {
 }
 
 /*** Top Menu ***/
-#zone-menu-wrapper {
+#zone-menu {
 	margin-bottom: .5em;
-	background-color: #69f;
+	background-color: #159;
+	border-radius: 3px;
 }
 #zone-menu-wrapper #superfish-1 > li {
 	margin: 0em;
@@ -90,14 +91,13 @@ h1.title {
 	width: 100%;
 	padding: 1em 0em 1em 0em;
 	margin-right: 2.5em;
-	background-color: #69f;
 	color: white;
 	text-indent: .5em;
 } #zone-menu-wrapper #superfish-1 > li > a:hover {
-	background-color: #36c;
+	background-color: #37b;
 }
 #zone-menu-wrapper #superfish-1 > li > ul {
-	background-color: #69f;
+	background-color: #37b;
 	top: 48px;
 }
 #zone-menu-wrapper #superfish-1 > li > ul > li {
@@ -108,7 +108,7 @@ h1.title {
 	color: white;
 	padding: .3em 0em;
 } #zone-menu-wrapper #superfish-1 > li > ul > li > a:hover {
-	background-color: #36c;
+	background-color: #159;
 }
 
 /*** Home Page ***/
@@ -155,11 +155,14 @@ body.front #region-sidebar-first > div > .block:first-child {
 }
 
 /*** Footer ***/
-#zone-footer-wrapper h2 {
-	font-size: 1.1em;
-}
 
 #zone-footer .region-footer-first,
 #zone-footer .region-footer-second {
-	width: 47%;
+	width: 330px;
+	height: 550px;
+}
+
+#zone-footer .region:first-child {
+	padding-right: 1em;
+	border-right: 1px dotted #666;
 }
