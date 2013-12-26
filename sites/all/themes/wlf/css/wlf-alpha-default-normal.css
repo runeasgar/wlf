@@ -20,7 +20,8 @@ h1.title {
 #logo {
 	width: 125px;
 }
-.site-name {
+h1.site-name,
+h2.site-name {
 	width: 150px;
 	background-color: transparent;
 	text-align: left;
@@ -28,7 +29,8 @@ h1.title {
 	margin: 0em;
 	padding: 0em;
 }
-.site-name a {
+h1.site-name a,
+h2.site-name a {
 	color: #333 !important;
 	font-family: 'Inder';
 	text-transform: uppercase;
@@ -72,7 +74,7 @@ h1.title {
 
 /*** Top Menu ***/
 #zone-menu-wrapper #superfish-1 > li > a {
-	margin-right: 5.5em;
+	padding: 1em 3em 1em 3em;
 }
 
 /*** Home Page ***/
@@ -91,6 +93,12 @@ body.front #region-content #block-views-nodequeue-1-block-1 img {
 }
 body.front .region-content #block-views-nodequeue-1-block-1 .views-field-body {
 	width: 550px;
+}
+
+/* Fitness Tips & Health Tips */
+body.front #region-content > div > .block + .block {
+	width: 300px;
+	float: left;
 }
 
 /* Free eBook */

@@ -29,6 +29,16 @@ h2.block-title {
 	color: white;
 }
 
+h2 > a {
+	background-color: #ee9400;
+	color: white !important;
+	display: block;
+	padding: .3em 0em .1em 0em;
+	border-radius: 3px;
+} h2 a:hover {
+	background-color: #ffa500;
+}
+
 h3 {
 	font-family: Arial;
 	font-size: 1em;
@@ -53,13 +63,15 @@ input[type="submit"],
 	background: #159 !important;
 	color: white !important;
 	border-radius: 3px !important;
-	border: 0px;
-	text-shadow: none;
 	text-decoration: none;
-	font-weight: 700;
+	text-shadow: none;
+	border: 0px;
+	font-weight: 300;
 }
 input[type="submit"] { /* Because otherwise the padding on the phone number pushes it out */
 	width: 100%;
+} input[type="submit"]:hover {
+	background-color: #37b !important;
 }
 
 /*** Branding ***/
@@ -69,19 +81,22 @@ input[type="submit"] { /* Because otherwise the padding on the phone number push
 #logo {
 	width: 100px;
 }
-.site-name {
+h2.site-name,
+h1.site-name {
 	width: 175px;
-	background-color: transparent;
+	background-color: transparent !important;
 	text-align: left;
 	font-size: 2.3em !important;
 	margin: 0em;
 	padding: 0em;
 }
-.site-name a {
+h2.site-name a,
+h1.site-name a {
 	color: #333 !important;
 	font-family: 'Inder';
 	text-transform: uppercase;
 	padding: 0em;
+	background-color: transparent;
 }
 
 /* HIDE Top Menu, Breadcrumb, Free eBook, Newsletter Signup, Schedule Appointment */
@@ -98,9 +113,11 @@ input[type="submit"] { /* Because otherwise the padding on the phone number push
 	margin-top: .5em;
 }
 #region-header-callout h2 {
-	background-color: #ffa500;
-	color: white;
+	padding: 0em;
 }
+#region-header-callout h2 > a {
+	background-color: #c30 !important;
+}	
 #region-header-callout #request-free-consultation-desktop {
 	display: none;
 }
@@ -111,9 +128,12 @@ input[type="submit"] { /* Because otherwise the padding on the phone number push
 }
 #phone-number {
 	display: block;
+	font-weight: 700;
+} #phone-number:hover {
+	background-color: #37b !important;
 }
 
-/*** Top Menu ***/
+/*** Bottom Menu ***/
 #zone-menu-secondary {
 	margin-bottom: .5em;
 }
@@ -127,7 +147,7 @@ input[type="submit"] { /* Because otherwise the padding on the phone number push
 	width: 100%;
 	padding: .5em 0em;
 	border-radius: 3px;
-	background-color: #69f;
+	background-color: #159;
 	color: white;
 	margin-bottom: .3em;
 	text-indent: .5em;
@@ -152,5 +172,5 @@ body.front #region-sidebar-first > div > .block + .block {
 #zone-footer-wrapper h2 {
 	font-size: 1.5em;
 	background-color: transparent !important;
-	color: #ffa500;;
+	color: #ffa500;
 }
