@@ -86,7 +86,7 @@ h1.site-name {
 	width: 175px;
 	background-color: transparent !important;
 	text-align: left;
-	font-size: 2.3em !important;
+	font-size: 2.3em;
 	margin: 0em;
 	padding: 0em;
 }
@@ -108,6 +108,14 @@ h1.site-name a {
 	display: none;
 }
 
+/* HIDE Free Consultation, Location, Hours on interior pages */
+body.not-front #region-header-callout,
+body.not-front #phone-number,
+body.not-front #location,
+body.not-front #hours {
+	display: none;
+}
+
 /*** Free Consultation Callout ***/
 #region-header-callout {
 	margin-top: .5em;
@@ -117,7 +125,9 @@ h1.site-name a {
 }
 #region-header-callout h2 > a {
 	background-color: #c30 !important;
-}	
+}	#region-header-callout h2 > a:hover {
+	background-color: #f30 !important;
+}
 #region-header-callout #request-free-consultation-desktop {
 	display: none;
 }
@@ -173,4 +183,65 @@ body.front #region-sidebar-first > div > .block + .block {
 	font-size: 1.5em;
 	background-color: transparent !important;
 	color: #ffa500;
+}
+
+/*** MailChimp Form ***/
+#zone-footer-wrapper #mc_embed_signup {
+	background-color: #333 !important;
+	color: white !important;
+}
+#mc_embed_signup input[type="submit"] {
+	padding: .3em !important;
+	font-size: 1.3em !important;
+	background: #159 !important;
+	color: white !important;
+	border-radius: 3px !important;
+	text-decoration: none;
+	text-shadow: none;
+	border: 0px;
+	font-weight: 300;
+	width: 100%;
+	height: auto;
+	vertical-align: middle;
+} #mc_embed_signup input[type="submit"]:hover {
+	background-color: #37b !important;
+}
+#mc_embed_signup input,
+#mc_embed_signup .mc-field-group {
+	width: 100% !important;
+	font-size: 1.2em !important;
+}
+
+/*** Nodes ***/
+body.not-front #block-system-main {
+	margin-bottom: 1em;
+}
+body.not-front #block-system-main article.node h2,
+body.not-front #block-system-main .view h2 {
+	text-align: center;
+	color: #ee9400;
+	background-color: transparent !important;
+	border-bottom: 1px solid #ee9400;
+	border-radius: 0px;
+}
+body.not-front #block-system-main .view h2 a {
+	background-color: transparent;
+	color: #ee9400 !important;
+}
+
+.node-service .field-name-field-image {
+	display: none;
+}
+.node-service .field-name-field-pricing {
+	text-align: right;
+	font-weight: 700;
+}
+
+/*** Views ***/
+.view-services .views-field-field-pricing {
+	font-weight: 700;
+	text-align: right;
+}
+.view-services .views-field-field-image {
+	display: none;
 }

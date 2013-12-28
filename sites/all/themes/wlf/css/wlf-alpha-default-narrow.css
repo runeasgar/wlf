@@ -11,6 +11,7 @@ h1, h2, h3 {
 
 h1.title {
 	text-align: left;
+	margin-top: 1em;
 }
 
 /*** Branding ***/
@@ -25,13 +26,13 @@ h2.site-name {
 	width: 125px;
 	background-color: transparent;
 	text-align: left;
-	font-size: 2.3em !important;
+	font-size: 2.3em;
 	margin: 0em;
 	padding: 0em;
 }
 h1.site-name a,
 h2.site-name {
-	color: #333 !important;
+	color: #333;
 	font-family: 'Inder';
 	text-transform: uppercase;
 	padding: 0em;
@@ -159,6 +160,9 @@ body.front #region-content > div > section.block.even {
 }
 
 /* Free eBook */
+body.not-front #region-sidebar-first {
+	padding-top: 1em;
+}
 body.front #region-sidebar-first > div > .block:first-child {
 	height: 259px;
 	margin-bottom: 1em;
@@ -183,4 +187,10 @@ body.front #region-sidebar-first > div > .block + .block h2 {
 #zone-footer .region:first-child {
 	padding-right: 1em;
 	border-right: 1px dotted #666;
+}
+
+/*** Node ***/
+body.not-front #block-system-main article.node h2,
+body.not-front #block-system-main .view h2 {
+	text-align: left;
 }

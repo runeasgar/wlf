@@ -25,13 +25,13 @@ h2.site-name {
 	width: 150px;
 	background-color: transparent;
 	text-align: left;
-	font-size: 3em !important;
+	font-size: 3em;
 	margin: 0em;
 	padding: 0em;
 }
 h1.site-name a,
 h2.site-name a {
-	color: #333 !important;
+	color: #333;
 	font-family: 'Inder';
 	text-transform: uppercase;
 	padding: 0em;
@@ -122,4 +122,19 @@ body.front #region-sidebar-first > div > .block:first-child {
 #zone-footer .region:last-child {
 	padding-left: 1em;	
 	border-left: 1px dotted #666;
+}
+
+/*** Views ***/
+.view-services .views-field-field-image,
+.node-service .field-name-field-image {
+	display: block;
+	float: left;
+	margin: 0em 1em .5em 0em;
+}
+.view-services .views-field-title {
+	clear: left;
+}
+.view-services .views-field views-field-body,
+.view-services .views-field views-field-view-node {
+	display: inline;
 }
