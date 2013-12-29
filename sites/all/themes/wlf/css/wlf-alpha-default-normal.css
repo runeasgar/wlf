@@ -74,7 +74,7 @@ h2.site-name a {
 
 /*** Top Menu ***/
 #zone-menu-wrapper #superfish-1 > li > a {
-	padding: 1em 3em 1em 3em;
+	padding: 1em 2em 1em 2em;
 }
 
 /*** Home Page ***/
@@ -104,6 +104,12 @@ body.front #region-content > div > .block + .block {
 /* Free eBook */
 body.front #region-sidebar-first > div > .block:first-child {
 	height: 349px;
+}
+body.front #ebook-desktop {
+	display: block;
+}
+#ebook-tablet {
+	display: none;
 }
 
 /*** Footer ***/

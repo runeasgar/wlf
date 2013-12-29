@@ -245,3 +245,12 @@ body.not-front #block-system-main .view h2 a {
 .view-services .views-field-field-image {
 	display: none;
 }
+.view-results .views-row {
+	margin-bottom: 1em;
+}
+.view-results .views-field-body p:last-child {
+	margin-bottom: 0em;
+}
+.view-results .views-field-field-who {
+	font-weight: 700;
+}

@@ -94,7 +94,7 @@ h2.site-name {
 }
 #zone-menu-wrapper #superfish-1 > li > a {
 	display: block;
-	padding: 1em 1.5em 1em 1.5em;
+	padding: 1em .8em 1em .8em;
 	color: white;
 	border-radius: 3px;
 } #zone-menu-wrapper #superfish-1 > li > a:hover {
@@ -113,6 +113,10 @@ h2.site-name {
 	padding: .5em 0em;
 } #zone-menu-wrapper #superfish-1 > li > ul > li > a:hover {
 	background-color: #159;
+}
+
+#zone-content {
+	margin-bottom: 1em;
 }
 
 /*** Home Page ***/
@@ -169,6 +173,12 @@ body.front #region-sidebar-first > div > .block:first-child {
 }
 body.front #region-sidebar-first > div > .block:first-child > .block-inner {
 	padding: 1em;
+}
+body.front #ebook-desktop {
+	display: none;
+}
+body.not-front #ebook-tablet {
+	display: none;
 }
 
 /* Helpful Links */
