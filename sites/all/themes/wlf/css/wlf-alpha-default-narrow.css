@@ -44,6 +44,13 @@ h2.site-name {
 #zone-footer .region-footer-second {
 	display: block;
 }
+/* DISPLAY header stuff on all pages */ 
+body.not-front #region-header-callout,
+body.not-front #phone-number,
+body.not-front #location,
+body.not-front #hours {
+	display: block;
+}
 /* HIDE Bottom Menu */
 #section-footer #zone-menu-secondary-wrapper {
 	display: none;
