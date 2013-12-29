@@ -147,13 +147,15 @@ body.front #region-content #block-views-nodequeue-1-block-1 img {
 }
 body.front .region-content #block-views-nodequeue-1-block-1 .views-field-body {
 	position: relative;
-	top: -5em;
-	left: 1em;
+	top: -8.5em;
+	left: .5em;
 	font-family: 'Architects Daughter'; /* Find a hand-written font */
-	color: white;
 	text-shadow: 1px 1px #000000;
-	font-size: 2em;
+	font-size: 1.5em;
 	width: 400px;
+}
+body.front .region-content #block-views-nodequeue-1-block-1 a {
+	color: white !important;
 }
 
 /* Fitness Tips & Health Tips */

@@ -93,6 +93,7 @@ body.front #region-content #block-views-nodequeue-1-block-1 img {
 }
 body.front .region-content #block-views-nodequeue-1-block-1 .views-field-body {
 	width: 550px;
+	font-size: 2em;
 }
 
 /* Fitness Tips & Health Tips */
@@ -139,6 +140,9 @@ body.front #ebook-desktop {
 }
 .view-services .views-field-title {
 	clear: left;
+}
+.view-services .views-field-body p:last-child {
+	margin-bottom: 0em;
 }
 .view-services .views-field views-field-body,
 .view-services .views-field views-field-view-node {
