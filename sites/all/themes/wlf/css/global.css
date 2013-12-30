@@ -110,9 +110,7 @@ h1.site-name a {
 
 /* HIDE Free Consultation, Location, Hours on interior pages */
 body.not-front #region-header-callout,
-body.not-front #phone-number,
-body.not-front #location,
-body.not-front #hours {
+body.not-front #region-header-contact {
 	display: none;
 }
 
@@ -216,15 +214,15 @@ body.front #region-sidebar-first > div > .block + .block {
 body.not-front #block-system-main {
 	margin-bottom: 1em;
 }
-body.not-front #block-system-main article.node h2,
-body.not-front #block-system-main .view h2 {
+body.not-front #region-content h2,
+body.not-front #region-content .view h2 {
 	text-align: center;
 	color: #ee9400;
 	background-color: transparent !important;
 	border-bottom: 1px solid #ee9400;
 	border-radius: 0px;
 }
-body.not-front #block-system-main .view h2 a {
+body.not-front #region-content .view h2 a {
 	background-color: transparent;
 	color: #ee9400 !important;
 }
