@@ -222,8 +222,8 @@ body.not-front #region-content .view h2 {
 	border-bottom: 1px solid #ee9400;
 	border-radius: 0px;
 }
-body.not-front #region-content .view h2 a {
-	background-color: transparent;
+body.not-front #region-content h2 a {
+	background-color: transparent !important;
 	color: #ee9400 !important;
 }
 
