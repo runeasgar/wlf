@@ -148,12 +148,13 @@ body.front .region-content #block-views-nodequeue-1-block-1 .views-field-body {
 	top: -8.5em;
 	left: .5em;
 	font-family: 'Architects Daughter'; /* Find a hand-written font */
-	text-shadow: 1px 1px #000000;
+	text-shadow: 2px 2px #000000;
 	font-size: 1.5em;
 	width: 400px;
+	color: white !important;
 }
 body.front .region-content #block-views-nodequeue-1-block-1 a {
-	color: white !important;
+	color: #3395d3 !important;
 }
 
 /* Fitness Tips & Health Tips */
