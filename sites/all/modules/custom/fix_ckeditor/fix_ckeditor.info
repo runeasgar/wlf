@@ -1,0 +1,5 @@
+name = Fix CKEditor
+description = Prevents CKEditor from encoding entities.
+core = 7.x
+dependencies = wysiwyg
+version = 7.x-1.0

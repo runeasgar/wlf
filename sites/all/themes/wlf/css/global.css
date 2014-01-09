@@ -51,6 +51,10 @@ a {
 	text-decoration: none !important;
 }
 
+ul, ol {
+	margin-left: 24px;
+}
+
 /* Form Elements */
 input, textarea {
 	max-width: 100%;
